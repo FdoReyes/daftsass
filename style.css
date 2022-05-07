@@ -718,17 +718,17 @@ footer {
   margin-top: auto;
 }
 
-.txt-sin {
+.txt-sin, .txt-fdo {
   margin: 20px;
   color: white;
 }
 
-.txt-sin:hover {
+.txt-sin:hover, .txt-fdo:hover {
   color: none;
 }
 
 .txt-fdo {
-  color: white;
+  margin: 0px;
   text-decoration: none;
 }
 
