@@ -50,6 +50,17 @@
     transition: 0.7s;
 }
 
+@mixin header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  15px 10px;
+    background-color: map-get($palette , bgcolor2);
+    width: 100%; 
+}
+
+
+
 //Inicio sitio
 body{
     @include body;
@@ -63,12 +74,7 @@ body{
 /* Inicio Cabecera Sass*/
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:  15px 10px;
-    background-color: map-get($palette , bgcolor2);
-    width: 100%;
+ @include header;
 }
 
 /* Fin Cabecera Sass*/
@@ -334,7 +340,11 @@ header {
 
 /* Fin Integrantes Sass*/
 
+
+
 /* Inicio Historia Sass*/
+
+
 
 /* Css grid Historia Sass*/
 .grid-historia {
@@ -546,6 +556,8 @@ header {
 
 
 
+
+
 /* Inicio Contacto */
 .container {
     width: 80%;
@@ -721,6 +733,9 @@ button {
 /* Fin Contacto Sass*/
 
 
+
+
+
 /* Inicio pie de pagina */
 footer{
     @include footer;
@@ -765,6 +780,9 @@ footer{
     }
 }
 /* fin pie de pagina */
+
+
+
 
 
 /* Tamaño pantallas */
