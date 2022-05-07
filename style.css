@@ -346,7 +346,7 @@ header {
   gap: 10px;
 }
 
-.txt-historia {
+.txt-historia, .container .txt-contact, .container .txt-contact2 {
   color: white;
   text-align: center;
   font-size: 40px;
@@ -355,7 +355,7 @@ header {
   text-shadow: 3px 3px #b40101;
 }
 
-.txt-historia:hover {
+.txt-historia:hover, .container .txt-contact:hover, .container .txt-contact2:hover {
   text-shadow: 3px 3px #0D8573;
 }
 
@@ -587,22 +587,20 @@ header {
   margin-bottom: 20px;
 }
 
-.container .txt-contact {
+.container .txt-contact, .container .txt-contact2 {
+  text-align: left;
   font-size: 30px;
   margin-bottom: 2px;
-  color: white;
-  text-shadow: 3px 3px #b40101;
 }
 
-.container .txt-contact:hover {
+.container .txt-contact:hover, .container .txt-contact2:hover {
   text-shadow: 3px 3px #0D8573;
 }
 
 .container .txt-contact2 {
   font-size: 25px;
+  margin-top: 3px;
   margin-bottom: 25px;
-  color: white;
-  text-shadow: 3px 3px #b40101;
 }
 
 .container .txt-contact2:hover {

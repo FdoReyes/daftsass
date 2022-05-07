@@ -44,7 +44,10 @@
     margin-top: auto;
 }
 
-@mixin bordes {}
+@mixin animate {
+    transform: scale(1.1);
+    transition: 0.7s;
+}
 
 //Inicio sitio
 body{
@@ -112,8 +115,7 @@ header {
     
 
     &:hover{
-        transform: scale(1.1);
-        transition: 0.7s;
+        @include animate;
         box-shadow: 0 0 15px 0 map-get($palette , color2);
     }
 }
@@ -124,8 +126,7 @@ header {
     height: 480px;
 
     &:hover {
-        transform: scale(1.1);
-        transition: 0.7s;
+        @include animate;
         box-shadow: 0 0 15px 0 map-get($palette , color2);
     }
 }
@@ -189,6 +190,8 @@ header {
     align-items: center;
 }
 
+
+
 .iframe1 {
     grid-area: iframe1;
 }
@@ -247,8 +250,7 @@ header {
 .img1 img, .img2 img, .img3 img {
 
     &:hover {
-    transform: scale(1.1);
-    transition: 0.7s;
+    @include animate;
     box-shadow: 0 0 15px 0 map-get($palette , color2);
     }
 }
@@ -601,10 +603,10 @@ header {
 
 .container {
     .txt-contact{
+    @extend .txt-historia;
+    text-align: left;
     font-size: 30px;
     margin-bottom: 2px;
-    color: map-get($palette , color5);
-    text-shadow: 3px 3px map-get($palette , color6);
     }
 
     .txt-contact:hover{
@@ -612,10 +614,10 @@ header {
     }
 
     .txt-contact2 {
+    @extend .txt-contact;
     font-size: 25px;
+    margin-top: 3px;
     margin-bottom: 25px;
-    color: map-get($palette , color5);
-    text-shadow: 3px 3px map-get($palette , color6);
     }
 
     .txt-contact2:hover {
