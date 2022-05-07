@@ -20,6 +20,7 @@
         );
 
 //Mixins
+
 @mixin titles {
     color: map-get($palette , color5);
     text-align: center;
@@ -42,6 +43,8 @@
     height: 90px;
     margin-top: auto;
 }
+
+@mixin bordes {}
 
 //Inicio sitio
 body{
