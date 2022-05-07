@@ -29,6 +29,15 @@
     min-height: 100vh;
 }
 
+@mixin header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  15px 10px;
+    background-color: map-get($palette , bgcolor2);
+    width: 100%; 
+}
+
 @mixin footer {
     display: flex;
     justify-content: space-between;
@@ -45,14 +54,6 @@
     transition: 0.7s;
 }
 
-@mixin header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:  15px 10px;
-    background-color: map-get($palette , bgcolor2);
-    width: 100%; 
-}
 
 
 
