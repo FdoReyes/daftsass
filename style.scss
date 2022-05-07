@@ -772,7 +772,7 @@ footer{
 
     .content1 video{
         grid-area: content1;
-        box-shadow: 0 0 15px 0 map-get($palette , color2);
+        box-shadow: 0 0 15px 0 map-get($palette , color1);
         width: 100%;     
 
     }
