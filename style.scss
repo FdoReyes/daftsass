@@ -5,22 +5,23 @@
     box-sizing: border-box;
 }
 
-//Variables Colores
-
-$color1:  #0D8573;
-$color2:  #E84343;
-$color3:  cadetblue;
-$color4:  red;
-$color5:  white;
-$color6:  #b40101;
-$color7:  cornflowerblue;
-$bgcolor:   black;
-
-
+//Map Colores
+        $palette:(
+        'color1':  #0D8573,
+        'color2':  #E84343,
+        'color3':  cadetblue,
+        'color4':  red,
+        'color5':  white,
+        'color6':  #b40101,
+        'color7':  cornflowerblue,
+        'bgcolor':   black,
+        'bgcolor2':  #3D0000,
+        'bgcolor3':  rgb(90, 89, 89),
+        );
 
 //Inicio sitio
 body{
-    background-color: $bgcolor;
+    background-color: map-get($palette , bgcolor);
     display:flex ;
     flex-direction: column;
     min-height: 100vh;
@@ -38,7 +39,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding:  15px 10px;
-    background-color: #3D0000;
+    background-color: map-get($palette , bgcolor2);
     width: 100%;
 }
 
@@ -56,13 +57,13 @@ header {
     
         & a {
             text-decoration: none;
-            color: $color5;
+            color: map-get($palette , color5);
             margin-left: 15px;
             font-size: 20px;
         }
 
         & a:hover{
-            color: $color4;
+            color: map-get($palette , color4);
         }
     }
 }
@@ -83,25 +84,25 @@ header {
 
 .content1 video{
     grid-area: content1;
-    box-shadow: 0 0 15px 0 $color1;
+    box-shadow: 0 0 15px 0 map-get($palette , color1);
 
     &:hover{
-        color: $color4;
+        color: map-get($palette , color4);
         transform: scale(1.1);
         transition: 0.7s;
-        box-shadow: 0 0 15px 0 $color2;
+        box-shadow: 0 0 15px 0 map-get($palette , color2);
     }
 }
 
 .content2 img{
     grid-area: content2;
-    box-shadow: 0 0 15px 0 $color1;
+    box-shadow: 0 0 15px 0 map-get($palette , color1);
     height: 480px;
 
     &:hover {
         transform: scale(1.1);
         transition: 0.7s;
-        box-shadow: 0 0 15px 0 $color2;
+        box-shadow: 0 0 15px 0 map-get($palette , color2);
     }
 }
 
@@ -114,7 +115,7 @@ header {
         font-size: 35px;
 
     &:hover{
-        color: $color3;
+        color: map-get($palette , color3);
     }
         }
     
@@ -122,19 +123,16 @@ header {
         font-size: 25px;
 
     &:hover {
-        color: $color3;
+        color: map-get($palette , color3);
     }
         }
     
     .daft-index {
 
     &:hover {
-        color: $color3;
+        color: map-get($palette , color3);
     }
     }
-
-
-
 
 }
 
@@ -184,7 +182,7 @@ header {
 }
 
 .iframe1, .iframe2, .iframe3{
-    box-shadow: 0 0 15px 0 $color1;
+    box-shadow: 0 0 15px 0 map-get($palette , color1);
 }
 
 .img1 {
@@ -193,7 +191,7 @@ header {
 
 .img1 img{
     height: 100%;
-    box-shadow: 0 0 15px 0 $color1;
+    box-shadow: 0 0 15px 0 map-get($palette , color1);
 }
 
 .img2 {
@@ -202,7 +200,7 @@ header {
 
 .img2 img{
     height: 100%;
-    box-shadow: 0 0 15px 0 $color1;
+    box-shadow: 0 0 15px 0 map-get($palette , color1);
 }
 
 .img3 {
@@ -211,7 +209,7 @@ header {
 
 .img3 img{
     height: 100%;
-    box-shadow: 0 0 15px 0 $color1;
+    box-shadow: 0 0 15px 0 map-get($palette , color1);
 }
 
 .img1, .img2, .img3 {
@@ -227,7 +225,7 @@ header {
     &:hover {
     transform: scale(1.1);
     transition: 0.7s;
-    box-shadow: 0 0 15px 0 $color2;
+    box-shadow: 0 0 15px 0 map-get($palette , color2);
     }
 }
 /* Fin grids discos Sass*/
@@ -235,13 +233,13 @@ header {
 
 .txt-discos{
     text-align: center;
-    color: $color5;
+    color: map-get($palette , color5);
     margin-top: 5px;
     margin-bottom: 20px;
-    text-shadow: 3px 3px $color2;
+    text-shadow: 3px 3px map-get($palette , color2);
 
     &:hover {
-        text-shadow: 3px 3px $color1;
+        text-shadow: 3px 3px map-get($palette , color1);
     }
 }
 
@@ -257,7 +255,7 @@ header {
     display: block;
 
     h1 {
-        color: $color5;
+        color: map-get($palette , color5);
         text-align: center;
         font-size: 40px;
     }
@@ -268,13 +266,13 @@ header {
         margin-bottom: 20px;
         width: 600px;
         height: 374px;
-        border: 7px solid $color5;
-        box-shadow: 0 0 50px 0 $color1;
+        border: 7px solid map-get($palette , color5);
+        box-shadow: 0 0 50px 0 map-get($palette , color1);
         
         &:hover {
             transform: scale(1.1);
             transition: 0.7s;
-            box-shadow: 0 0 15px 0 $color2;
+            box-shadow: 0 0 15px 0 map-get($palette , color2);
         }
         
     }
@@ -284,10 +282,10 @@ header {
     margin-top: 10px;
     font-size: 25px;
     text-align: center;
-    text-shadow: 3px 3px $color6;
+    text-shadow: 3px 3px map-get($palette , color6);
 
     &:hover {
-        text-shadow: 3px 3px $color1;
+        text-shadow: 3px 3px map-get($palette , color1);
     }
 }
 
@@ -296,18 +294,18 @@ header {
     font-size: 30px;
     text-align: center;
     margin-top: 15px;
-    color:  $color5;
+    color:  map-get($palette , color5);
 }
 
 .txt-names2 {
     font-size: 20px;
-    color: $color5;
+    color: map-get($palette , color5);
     text-align: center;
 }
 
 .txt-names, .txt-names2{
     &:hover 
-    {color: $color1;}
+    {color: map-get($palette , color1);}
 }
 
 /* Fin Integrantes Sass*/
@@ -325,25 +323,25 @@ header {
 
 .grid-historia .guythomas img{
     height: 500px;
-    border: 10px solid $color5;
+    border: 10px solid map-get($palette , color5);
 
     &:hover {
         transform: scale(1.1);
         transition: 0.7s;
-        box-shadow: 0 0 15px 0 $color2;
+        box-shadow: 0 0 15px 0 map-get($palette , color2);
         filter: grayscale(90%);
     }
 }
 
 
 .txt-guythomas {
-    color: $color5;
+    color: map-get($palette , color5);
 }
 
 .txt-origins, .txt-origins2{
 
     &:hover {
-    color: $color6;
+    color: map-get($palette , color6);
     }
 }
 
@@ -371,20 +369,20 @@ header {
 }
 
 .txt-historia {
-    color: $color5;
+    color: map-get($palette , color5);
     text-align: center;
     font-size: 40px;
     margin-top: 20px;
     margin-bottom: 20px;
-    text-shadow: 3px 3px $color6;
+    text-shadow: 3px 3px map-get($palette , color6);
 
     &:hover {
-        text-shadow: 3px 3px $color1;
+        text-shadow: 3px 3px map-get($palette , color1);
     } 
 }
 
 .txt-galeria2 {
-    color: $color5;
+    color: map-get($palette , color5);
     text-align: center;
     font-size: 40px;
     margin-top: 20px;
@@ -392,7 +390,7 @@ header {
 }
 
 .img {
-    border: 2px solid $color5;
+    border: 2px solid map-get($palette , color5);
     border-radius: 7px;
 
     &:hover {
@@ -473,7 +471,7 @@ header {
 
 /* Inicio Carrusel Videos */
 .txt-videos {
-    color: $color5;
+    color: map-get($palette , color5);
     text-align: center;
     font-size: 40px;
     margin-top: 20px;
@@ -483,7 +481,7 @@ header {
 #carrusel3 {
     width: 100%;
     height: 100%;
-    box-shadow: 0 0 20px 0 $color1;
+    box-shadow: 0 0 20px 0 map-get($palette , color1);
     margin-bottom: 50px;
 
     .carousel-item video{
@@ -495,7 +493,7 @@ header {
         height: 80px;
         width: 80px;
         margin-left: 20px;
-        background-color: $color6;
+        background-color: map-get($palette , color6);
         box-shadow: 0 0 50px 0 cornflowerblue;
     }
 
@@ -503,7 +501,7 @@ header {
     .carousel-control-next {
         height: 80px;
         width: 80px;
-        background-color: $color6;
+        background-color: map-get($palette , color6);
         margin-right: 20px;
         box-shadow: 0 0 50px 0 cornflowerblue;
     }
@@ -533,7 +531,7 @@ header {
     margin: 50px auto;
 
     .txt-contact2 {
-        color: white;
+        color: map-get($palette , color5);
     }
 }
 
@@ -545,12 +543,12 @@ header {
 
 
 .contact-box {
-    background: #fff;
+    background: map-get($palette , color5);
     display:flex;
-    box-shadow: 0 0 20px 0 cornflowerblue;
+    box-shadow: 0 0 20px 0 map-get($palette , color7);
 
     &:hover {
-        box-shadow: 0 0 20px 0 #0D8573;
+        box-shadow: 0 0 20px 0 map-get($palette , color1);
     }
 }
 
@@ -560,7 +558,7 @@ header {
 
     h3 {
         margin-bottom: 30px;
-        color: #b40101;
+        color: map-get($palette , color6);
     }
 }
 
@@ -568,8 +566,8 @@ header {
 .contact-right {
     flex-basis: 40%;
     padding: 40px;
-    background:  rgb(90, 89, 89);
-    color: #fff;
+    background: map-get($palette , bgcolor3);
+    color: map-get($palette , color5);
 
     .txt-follow {
         font-size: 25px;
@@ -587,23 +585,23 @@ header {
     .txt-contact{
     font-size: 30px;
     margin-bottom: 2px;
-    color:white;
-    text-shadow: 3px 3px #b40101;
+    color: map-get($palette , color5);
+    text-shadow: 3px 3px map-get($palette , color6);
     }
 
     .txt-contact:hover{
-        text-shadow: 3px 3px #0D8573;
+        text-shadow: 3px 3px map-get($palette , color1);
     }
 
     .txt-contact2 {
     font-size: 25px;
     margin-bottom: 25px;
-    color: white;
-    text-shadow: 3px 3px #b40101;
+    color: map-get($palette , color5);
+    text-shadow: 3px 3px map-get($palette , color6);
     }
 
     .txt-contact2:hover {
-        text-shadow: 3px 3px #0D8573;
+        text-shadow: 3px 3px map-get($palette , color1);
     }
 }
 
@@ -648,12 +646,12 @@ textarea {
 label {
     margin-bottom: 0px;
     display: block;
-    color: #b40101;
+    color: map-get($palette , color6);
 }
 
 button {
-    background: #b40101;
-    color: white;
+    background: map-get($palette , color6);
+    color: map-get($palette , color5);
     width: 100%;
     border: none;
     outline: none;
@@ -671,12 +669,12 @@ button {
         display: inline-block;
 
         a {
-            color: white;
+            color: map-get($palette , color5);
             margin-left: 15px;
             font-size: 40px;
 
         &:hover {
-            color: red;
+            color: map-get($palette , color4);
         }
         }
     }  
@@ -689,12 +687,12 @@ button {
         display: inline-block;
     
         a{
-            color: $color5;
+            color: map-get($palette , color5);
             margin-left: 15px;
             font-size: 40px;
 
         &:hover {
-            color: red;
+            color: map-get($palette , color4);
         }
         }
     }
@@ -706,8 +704,8 @@ button {
 footer{
     display: flex;
     justify-content: space-between;
-    background-color: #3D0000;
-    color: $color5;
+    background-color: map-get($palette , bgcolor2);
+    color: map-get($palette , color5);
     align-items: center;
     width: 100%;
     height: 90px;
@@ -716,18 +714,18 @@ footer{
 
 .txt-sin{
     margin: 20px;
-    color: $color5;
+    color: map-get($palette , color5);
 
     &:hover {
         color: none;
     }
 }
 .txt-fdo{
-    color: $color5;
+    color: map-get($palette , color5);
     text-decoration: none;
 
     &:hover {
-        color: #0D8573;
+        color: map-get($palette , color1);
         text-decoration: none;
     }
 }
@@ -741,11 +739,11 @@ footer{
         margin: 0px 0px 0px 15px;
     
         a{
-            color: white;
+            color: map-get($palette , color5);
             font-size: 20px;
 
         &:hover {
-            color: red;
+            color: map-get($palette , color4);
         }
         
         }
@@ -770,7 +768,7 @@ footer{
 
     .content1 video{
         grid-area: content1;
-        box-shadow: 0 0 15px 0 #0D8573;
+        box-shadow: 0 0 15px 0 map-get($palette , color2);
         width: 100%;     
 
     }
@@ -784,7 +782,7 @@ footer{
     
     .content3 {
         grid-area: content3;
-        color: white;
+        color: map-get($palette , color5);
         justify-items: center;
     }
 
@@ -821,7 +819,7 @@ footer{
     }
     
     .iframe1, .iframe2, .iframe3{
-        box-shadow: 0 0 15px 0 #0D8573;
+        box-shadow: 0 0 15px 0 map-get($palette , color1);
     }
     
     .iframe1 iframe, .iframe2 iframe, .iframe3 iframe{
@@ -836,7 +834,7 @@ footer{
     .img1 img{
         width: 100%;
         height:100%;
-        box-shadow: 0 0 15px 0 #0D8573;
+        box-shadow: 0 0 15px 0 map-get($palette , color1);
     }
     
     .img2 {
@@ -846,7 +844,7 @@ footer{
     .img2 img{
         width: 100%;
         height:100%;
-        box-shadow: 0 0 15px 0 #0D8573;
+        box-shadow: 0 0 15px 0 map-get($palette , color1);
     }
     
     .img3 {
@@ -856,7 +854,7 @@ footer{
     .img3 img{
         width: 100%;
         height:100%;
-        box-shadow: 0 0 15px 0 #0D8573;
+        box-shadow: 0 0 15px 0 map-get($palette , color1);
     }
     
     .img1, .img2, .img3 {
@@ -893,7 +891,7 @@ footer{
 
     .content1 video{
         grid-area: content1;
-        box-shadow: 0 0 15px 0 #0D8573;
+        box-shadow: 0 0 15px 0 map-get($palette , color1);
         width: 100%;     
     }
     
@@ -905,7 +903,7 @@ footer{
     
     .content3 {
         grid-area: content3;
-        color: white;
+        color: map-get($palette , color5);
         justify-items: center;
     }
 /* Inicio Index 480x780 */
@@ -944,7 +942,7 @@ footer{
 }
 
 .iframe1, .iframe2, .iframe3{
-    box-shadow: 0 0 15px 0 #0D8573;
+    box-shadow: 0 0 15px 0 map-get($palette , color1);
 }
 
 .img1 {
@@ -955,7 +953,7 @@ footer{
     margin-top: 15em;
     width: 100%;
     height:100%;
-    box-shadow: 0 0 15px 0 #0D8573;
+    box-shadow: 0 0 15px 0 map-get($palette , color1);
 }
 
 .img2 {
@@ -966,7 +964,7 @@ footer{
     margin-top: 15em;
     width: 100%;
     height:100%;
-    box-shadow: 0 0 15px 0 #0D8573;
+    box-shadow: 0 0 15px 0 map-get($palette , color1);
 }
 
 .img3 {
@@ -977,7 +975,7 @@ footer{
     margin-top: 15em;
     width: 100%;
     height:100%;
-    box-shadow: 0 0 15px 0 #0D8573;
+    box-shadow: 0 0 15px 0 map-get($palette , color1);
 }
 
 .img1, .img2, .img3 {
@@ -1013,7 +1011,7 @@ footer{
 
 .content1 video{
     grid-area: content1;
-    box-shadow: 0 0 15px 0 #0D8573;
+    box-shadow: 0 0 15px 0 map-get($palette , color1);
     width: 100%;     
 }
 
@@ -1026,7 +1024,7 @@ footer{
 
 .content3 {
     grid-area: content3;
-    color: white;
+    color: map-get($palette , color5);
     justify-items: center;
 }
 /* Fin Index 480*/
@@ -1062,7 +1060,7 @@ footer{
 }
 
 .iframe1, .iframe2, .iframe3{
-    box-shadow: 0 0 15px 0 #0D8573;
+    box-shadow: 0 0 15px 0 map-get($palette , color1);
 }
 
 .iframe1 iframe, .iframe2 iframe, .iframe3 iframe{
@@ -1076,7 +1074,7 @@ footer{
 .img1 img{
     width: 100%;
     height:100%;
-    box-shadow: 0 0 15px 0 #0D8573;
+    box-shadow: 0 0 15px 0 map-get($palette , color1);
 }
 
 .img2 {

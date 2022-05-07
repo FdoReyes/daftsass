@@ -544,7 +544,7 @@ header {
 }
 
 .contact-box {
-  background: #fff;
+  background: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -573,7 +573,7 @@ header {
       flex-basis: 40%;
   padding: 40px;
   background: #5a5959;
-  color: #fff;
+  color: white;
 }
 
 .contact-right .txt-follow {
@@ -767,8 +767,8 @@ footer {
   }
   .content1 video {
     grid-area: content1;
-    -webkit-box-shadow: 0 0 15px 0 #0D8573;
-            box-shadow: 0 0 15px 0 #0D8573;
+    -webkit-box-shadow: 0 0 15px 0 #E84343;
+            box-shadow: 0 0 15px 0 #E84343;
     width: 100%;
   }
   .content2 img {
