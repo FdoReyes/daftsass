@@ -19,12 +19,22 @@
         'bgcolor3':  rgb(90, 89, 89),
         );
 
-//Inicio sitio
-body{
+//Mixins
+@mixin titles {
+    color: map-get($palette , color5);
+    text-align: center;
+}
+
+@mixin body {
     background-color: map-get($palette , bgcolor);
     display:flex ;
     flex-direction: column;
     min-height: 100vh;
+}
+
+//Inicio sitio
+body{
+    @include body;
 }
 
 .logo {
@@ -84,13 +94,11 @@ header {
 
 .content1 video{
     grid-area: content1;
-    box-shadow: 0 0 15px 0 map-get($palette , color1);
+    
 
     &:hover{
-        color: map-get($palette , color4);
         transform: scale(1.1);
         transition: 0.7s;
-        box-shadow: 0 0 15px 0 map-get($palette , color2);
     }
 }
 
@@ -255,8 +263,7 @@ header {
     display: block;
 
     h1 {
-        color: map-get($palette , color5);
-        text-align: center;
+        @include titles;
         font-size: 40px;
     }
 
@@ -279,9 +286,9 @@ header {
 }
 
 .txt-band2{
+    @include titles;
     margin-top: 10px;
     font-size: 25px;
-    text-align: center;
     text-shadow: 3px 3px map-get($palette , color6);
 
     &:hover {
@@ -291,16 +298,14 @@ header {
 
 
 .txt-names {
+    @include titles;
     font-size: 30px;
-    text-align: center;
     margin-top: 15px;
-    color:  map-get($palette , color5);
 }
 
 .txt-names2 {
+    @include titles;
     font-size: 20px;
-    color: map-get($palette , color5);
-    text-align: center;
 }
 
 .txt-names, .txt-names2{
@@ -369,8 +374,7 @@ header {
 }
 
 .txt-historia {
-    color: map-get($palette , color5);
-    text-align: center;
+    @include titles;
     font-size: 40px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -382,8 +386,7 @@ header {
 }
 
 .txt-galeria2 {
-    color: map-get($palette , color5);
-    text-align: center;
+    @include titles;
     font-size: 40px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -471,8 +474,7 @@ header {
 
 /* Inicio Carrusel Videos */
 .txt-videos {
-    color: map-get($palette , color5);
-    text-align: center;
+    @include titles;
     font-size: 40px;
     margin-top: 20px;
     margin-bottom: 5px;

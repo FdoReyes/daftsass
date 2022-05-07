@@ -74,18 +74,13 @@ header {
 
 .content1 video {
   grid-area: content1;
-  -webkit-box-shadow: 0 0 15px 0 #0D8573;
-          box-shadow: 0 0 15px 0 #0D8573;
 }
 
 .content1 video:hover {
-  color: red;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-transition: 0.7s;
   transition: 0.7s;
-  -webkit-box-shadow: 0 0 15px 0 #E84343;
-          box-shadow: 0 0 15px 0 #E84343;
 }
 
 .content2 img {
@@ -262,9 +257,10 @@ header {
 }
 
 .txt-band2 {
+  color: white;
+  text-align: center;
   margin-top: 10px;
   font-size: 25px;
-  text-align: center;
   text-shadow: 3px 3px #b40101;
 }
 
@@ -273,16 +269,16 @@ header {
 }
 
 .txt-names {
-  font-size: 30px;
-  text-align: center;
-  margin-top: 15px;
   color: white;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 15px;
 }
 
 .txt-names2 {
-  font-size: 20px;
   color: white;
   text-align: center;
+  font-size: 20px;
 }
 
 .txt-names:hover, .txt-names2:hover {
