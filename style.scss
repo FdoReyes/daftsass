@@ -32,6 +32,17 @@
     min-height: 100vh;
 }
 
+@mixin footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: map-get($palette , bgcolor2);
+    color: map-get($palette , color5);
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    margin-top: auto;
+}
+
 //Inicio sitio
 body{
     @include body;
@@ -706,14 +717,7 @@ button {
 
 /* Inicio pie de pagina */
 footer{
-    display: flex;
-    justify-content: space-between;
-    background-color: map-get($palette , bgcolor2);
-    color: map-get($palette , color5);
-    align-items: center;
-    width: 100%;
-    height: 90px;
-    margin-top: auto;
+    @include footer;
 }
 
 .txt-sin{
