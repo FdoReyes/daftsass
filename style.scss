@@ -94,11 +94,13 @@ header {
 
 .content1 video{
     grid-area: content1;
+    box-shadow: 0 0 15px 0 map-get($palette , color1);
     
 
     &:hover{
         transform: scale(1.1);
         transition: 0.7s;
+        box-shadow: 0 0 15px 0 map-get($palette , color2);
     }
 }
 

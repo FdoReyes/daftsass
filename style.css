@@ -74,6 +74,8 @@ header {
 
 .content1 video {
   grid-area: content1;
+  -webkit-box-shadow: 0 0 15px 0 #0D8573;
+          box-shadow: 0 0 15px 0 #0D8573;
 }
 
 .content1 video:hover {
@@ -81,6 +83,8 @@ header {
           transform: scale(1.1);
   -webkit-transition: 0.7s;
   transition: 0.7s;
+  -webkit-box-shadow: 0 0 15px 0 #E84343;
+          box-shadow: 0 0 15px 0 #E84343;
 }
 
 .content2 img {
