@@ -663,39 +663,21 @@ button {
           box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
 }
 
-.follow {
+.follow, .music {
   list-style: none;
 }
 
-.follow li {
+.follow li, .music li {
   display: inline-block;
 }
 
-.follow li a {
+.follow li a, .music li a {
   color: white;
   margin-left: 15px;
   font-size: 40px;
 }
 
-.follow li a:hover {
-  color: red;
-}
-
-.music {
-  list-style: none;
-}
-
-.music li {
-  display: inline-block;
-}
-
-.music li a {
-  color: white;
-  margin-left: 15px;
-  font-size: 40px;
-}
-
-.music li a:hover {
+.follow li a:hover, .music li a:hover {
   color: red;
 }
 

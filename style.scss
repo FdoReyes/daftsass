@@ -709,22 +709,10 @@ button {
 }
 
 .music {
-    list-style: none;
+    @extend .follow;
+}
 
-    li{
-        display: inline-block;
-    
-        a{
-            color: map-get($palette , color5);
-            margin-left: 15px;
-            font-size: 40px;
 
-        &:hover {
-            color: map-get($palette , color4);
-        }
-        }
-    }
-} 
 /* Fin Contacto Sass*/
 
 
