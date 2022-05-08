@@ -42,23 +42,23 @@ header {
 
 /* Fin Cabecera Sass*/
 /* Menu Navegación Sass*/
-.nav-links {
+.nav-links, .social {
   list-style: none;
   margin-right: 10px;
 }
 
-.nav-links li {
+.nav-links li, .social li {
   display: inline-block;
 }
 
-.nav-links li a {
+.nav-links li a, .social li a {
   text-decoration: none;
   color: white;
   margin-left: 15px;
   font-size: 20px;
 }
 
-.nav-links li a:hover {
+.nav-links li a:hover, .social li a:hover {
   color: red;
 }
 
@@ -737,23 +737,31 @@ footer {
   text-decoration: none;
 }
 
+/* .social{
+    list-style: none;
+    margin-right: 15px;
+
+    li{
+        display: inline-block;
+        margin: 0px 0px 0px 15px;
+    
+        a{
+            color: map-get($palette , color5);
+            font-size: 20px;
+
+        &:hover {
+            color: map-get($palette , color4);
+        }
+        
+        }
+    }
+}
+
+*/
 .social {
-  list-style: none;
   margin-right: 15px;
-}
-
-.social li {
-  display: inline-block;
-  margin: 0px 0px 0px 15px;
-}
-
-.social li a {
-  color: white;
-  font-size: 20px;
-}
-
-.social li a:hover {
-  color: red;
+  margin: 0px 20px 0px 0px;
+  margin-left: 0px;
 }
 
 /* fin pie de pagina */

@@ -755,7 +755,7 @@ footer{
     }
 }
 
-.social{
+/* .social{
     list-style: none;
     margin-right: 15px;
 
@@ -774,6 +774,18 @@ footer{
         }
     }
 }
+
+*/
+
+.social {
+    @extend .nav-links;
+    margin-right: 15px;
+    margin: 0px 20px 0px 0px;
+    margin-left: 0px;
+}
+
+
+
 /* fin pie de pagina */
 
 
