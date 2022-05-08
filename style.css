@@ -737,27 +737,6 @@ footer {
   text-decoration: none;
 }
 
-/* .social{
-    list-style: none;
-    margin-right: 15px;
-
-    li{
-        display: inline-block;
-        margin: 0px 0px 0px 15px;
-    
-        a{
-            color: map-get($palette , color5);
-            font-size: 20px;
-
-        &:hover {
-            color: map-get($palette , color4);
-        }
-        
-        }
-    }
-}
-
-*/
 .social {
   margin-right: 15px;
   margin: 0px 20px 0px 0px;
