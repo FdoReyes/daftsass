@@ -2,19 +2,19 @@
 @import 'mixins';
 
 //Map Colores
-        $palette:(
-        'color1':  #0D8573,
-        'color2':  #E84343,
-        'color3':  cadetblue,
-        'color4':  red,
-        'color5':  white,
-        'color6':  #b40101,
-        'color7':  cornflowerblue,
-        'color8':   #ccc,
-        'bgcolor':   black,
-        'bgcolor2':  #3D0000,
-        'bgcolor3':  rgb(90, 89, 89),
-        );
+$palette:(
+    'color1':  #0D8573,
+    'color2':  #E84343,
+    'color3':  cadetblue,
+    'color4':  red,
+    'color5':  white,
+    'color6':  #b40101,
+    'color7':  cornflowerblue,
+    'color8':   #ccc,
+    'bgcolor':   black,
+    'bgcolor2':  #3D0000,
+    'bgcolor3':  rgb(90, 89, 89),
+    );
 
 //Inicio sitio
 body{
