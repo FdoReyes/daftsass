@@ -42,23 +42,24 @@ header {
 
 /* Fin Cabecera Sass*/
 /* Menu Navegación Sass*/
-.nav-links, .social {
+.navbar, .social {
   list-style: none;
   margin-right: 10px;
+  background-color: #3D0000;
 }
 
-.nav-links li, .social li {
+.navbar li, .social li {
   display: inline-block;
 }
 
-.nav-links li a, .social li a {
+.navbar li a, .social li a {
   text-decoration: none;
   color: white;
   margin-left: 15px;
   font-size: 20px;
 }
 
-.nav-links li a:hover, .social li a:hover {
+.navbar li a:hover, .social li a:hover {
   color: red;
 }
 

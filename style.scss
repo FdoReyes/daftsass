@@ -37,9 +37,10 @@ header {
 
 /* Menu Navegación Sass*/
 
-.nav-links {
+.navbar {
     list-style: none;
     margin-right: 10px;
+    background-color: map-get($palette , bgcolor2);
 
     li {
         display: inline-block;
@@ -705,7 +706,7 @@ footer{
 }
 
 .social {
-    @extend .nav-links;
+    @extend .navbar;
     margin-right: 15px;
     margin: 0px 20px 0px 0px;
     margin-left: 0px;
