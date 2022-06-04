@@ -163,17 +163,15 @@ header {
   border-radius: 10px;
 }
 
-.col {
-  margin-top: 0px;
-}
-
-.col-sm img {
+.discos-df img {
   height: 250px;
   -webkit-box-shadow: 0 0 10px 0 #0D8573;
           box-shadow: 0 0 10px 0 #0D8573;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
-.col-sm img:hover {
+.discos-df img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-transition: 0.7s;
@@ -278,47 +276,18 @@ header {
 /* Fin Integrantes Sass*/
 /* Inicio Historia Sass*/
 /* Css grid Historia Sass*/
-.grid-historia {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
-  padding: 20px;
-  gap: 30px;
-  margin-bottom: 2em;
+.guytomas img {
+  height: 350px;
+  border: 8px solid white;
 }
 
-.grid-historia .guythomas img {
-  height: 500px;
-  border: 10px solid white;
-}
-
-.grid-historia .guythomas img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-  -webkit-box-shadow: 0 0 15px 0 #E84343;
-          box-shadow: 0 0 15px 0 #E84343;
-  -webkit-filter: grayscale(90%);
-          filter: grayscale(90%);
-}
-
-.txt-guythomas {
+.featurette-heading {
   color: white;
 }
 
-.txt-origins:hover, .txt-origins2:hover {
-  color: #b40101;
-}
-
-.txt-origins {
-  font-size: 30px;
-}
-
-.txt-origins2 {
-  text-align: left;
-  margin-top: 10px;
+.lead, .lead2 {
+  color: white;
+  font-size: 18px;
 }
 
 /* Css grid Historia Sass*/
@@ -745,8 +714,33 @@ footer {
   }
   /* Fin Index 480*/
   /*Incio Integrantes 480 */
+  .txt-band2 {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    text-shadow: 3px 3px #b40101;
+  }
+  .txt-band2:hover {
+    text-shadow: 3px 3px #0D8573;
+  }
   /*Fin Integrantes 480 */
   /* Inicio Discos 480*/
+  .discos-df img {
+    height: 50px;
+    -webkit-box-shadow: 0 0 10px 0 #0D8573;
+            box-shadow: 0 0 10px 0 #0D8573;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .discos-df img:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+    -webkit-box-shadow: 0 0 15px 0 #E84343;
+            box-shadow: 0 0 15px 0 #E84343;
+  }
   /* Fins Discos 480*/
   /* Inicio Galeria Historia 480*/
   .galeria {

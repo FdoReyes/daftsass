@@ -163,13 +163,11 @@ header {
     border-radius: 10px;
 }
 
-.col {
-    margin-top: 0px;
-}
-
-.col-sm img{
+.discos-df img{
     height: 250px;
     box-shadow: 0 0 10px 0 map-get($palette , color1);
+    margin-top: 20px;
+    margin-bottom: 30px;
 
     &:hover {
         @include animate;
@@ -280,45 +278,19 @@ header {
 
 
 /* Css grid Historia Sass*/
-.grid-historia {
-    display: grid;
-    grid-template-columns: auto auto;
-    padding: 20px;
-    gap: 30px;
-    margin-bottom: 2em;
+
+.guytomas img{
+    height: 350px;
+    border: 8px solid white;
 }
 
-.grid-historia .guythomas img{
-    height: 500px;
-    border: 10px solid map-get($palette , color5);
-
-    &:hover {
-        transform: scale(1.1);
-        transition: 0.7s;
-        box-shadow: 0 0 15px 0 map-get($palette , color2);
-        filter: grayscale(90%);
-    }
+.featurette-heading{
+    color: white;
 }
 
-
-.txt-guythomas {
-    color: map-get($palette , color5);
-}
-
-.txt-origins, .txt-origins2{
-
-    &:hover {
-    color: map-get($palette , color6);
-    }
-}
-
-.txt-origins {
-    font-size: 30px;
-}
-
-.txt-origins2 {
-    text-align: left;
-    margin-top: 10px;
+.lead, .lead2 {
+    color: white;
+    font-size: 18px;
 }
 
 /* Css grid Historia Sass*/
@@ -680,6 +652,9 @@ footer{
         padding: 10px;
         gap: 5px;
     }
+
+
+ 
     /*Fin Historia 780x1920*/
 }
 
@@ -777,14 +752,33 @@ footer{
 /* Fin Index 480*/
 
 /*Incio Integrantes 480 */
+.txt-band2{
+    @include titles;
+    margin-top: 10px;
+    font-size: 20px;
+    text-shadow: 3px 3px map-get($palette , color6);
 
+    &:hover {
+        text-shadow: 3px 3px map-get($palette , color1);
+    }
+}
 
 
 
 /*Fin Integrantes 480 */
 
 /* Inicio Discos 480*/
+.discos-df img{
+    height: 50px;
+    box-shadow: 0 0 10px 0 map-get($palette , color1);
+    margin-top: 20px;
+    margin-bottom: 30px;
 
+    &:hover {
+        @include animate;
+        box-shadow: 0 0 15px 0 map-get($palette , color2);
+    }
+}
 
 /* Fins Discos 480*/
 
