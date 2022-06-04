@@ -198,7 +198,7 @@ header {
 
 /* Inicio Integrantes Sass*/
 
-.band{
+.Integrantes{
     display: block;
 
     h1 {
@@ -208,10 +208,8 @@ header {
 
     & img {
         margin-top: 10px;
-        margin-left: 450px;
         margin-bottom: 20px;
-        width: 600px;
-        height: 374px;
+        width: 500em;
         border: 7px solid map-get($palette , color5);
         box-shadow: 0 0 10px 0 map-get($palette , color1);
         
@@ -227,7 +225,7 @@ header {
 .txt-band2{
     @include titles;
     margin-top: 10px;
-    font-size: 25px;
+    font-size: 40px;
     text-shadow: 3px 3px map-get($palette , color6);
 
     &:hover {
@@ -671,76 +669,6 @@ footer{
 
 /* Inicio Tamaño Discos 780x1920*/
 
-    .grid2 {
-        grid-template: 
-        'iframe1 iframe2 iframe3'
-        'img1 img2 img3';
-        gap: 10px;
-    }
-
-
-    .iframe1 {
-        grid-area: iframe1;
-        width: 100%;
-        height: 100%;
-        
-    }
-    
-    .iframe2 {
-        grid-area: iframe2;
-        width: 100%;
-        height: 100%;
-    }
-    
-    .iframe3 {
-        grid-area: iframe3;
-        width: 100%;
-        height: 100%;
-    }
-    
-    .iframe1, .iframe2, .iframe3{
-        box-shadow: 0 0 15px 0 map-get($palette , color1);
-    }
-    
-    .iframe1 iframe, .iframe2 iframe, .iframe3 iframe{
-        width: 100%;
-        height: 250%;
-    }
-
-    .img1 {
-        grid-area: img1;
-    }
-    
-    .img1 img{
-        width: 100%;
-        height:100%;
-        box-shadow: 0 0 15px 0 map-get($palette , color1);
-    }
-    
-    .img2 {
-        grid-area: img2;
-    }
-    
-    .img2 img{
-        width: 100%;
-        height:100%;
-        box-shadow: 0 0 15px 0 map-get($palette , color1);
-    }
-    
-    .img3 {
-        grid-area: img3;
-    }
-    
-    .img3 img{
-        width: 100%;
-        height:100%;
-        box-shadow: 0 0 15px 0 map-get($palette , color1);
-    }
-    
-    .img1, .img2, .img3 {
-        margin-top: 15em;
-        text-align: center;
-    }
 
 
     /* Fin Tamaño Discos 780x1920*/
@@ -786,83 +714,22 @@ footer{
         color: map-get($palette , color5);
         justify-items: center;
     }
-/* Inicio Index 480x780 */
+/* Fin Index 480x780 */
 
 /* Inicio Discos 480x780 */
-.grid2 {
-    grid-template: 
-    'iframe1 iframe2 iframe3'
-    'img1 img2 img3';
-    gap: 10px;
-}
 
 
-.iframe1 {
-    grid-area: iframe1;
-    width: 100%;
-    height: 100%;
-    
-}
+/* Fin Discos 480x780 */
 
-.iframe2 {
-    grid-area: iframe2;
-    width: 100%;
-    height: 100%;
-}
+/* Inicio Integrantes 480x780 */
 
-.iframe3 {
-    grid-area: iframe3;
-    width: 100%;
-    height: 100%;
-}
 
-.iframe1 iframe, .iframe2 iframe, .iframe3 iframe{
-    width: 100%;
-    height: 250%;
-}
 
-.iframe1, .iframe2, .iframe3{
-    box-shadow: 0 0 15px 0 map-get($palette , color1);
-}
+/* Fin Integrantes 480x780 */
 
-.img1 {
-    grid-area: img1;
-}
 
-.img1 img{
-    margin-top: 15em;
-    width: 100%;
-    height:100%;
-    box-shadow: 0 0 15px 0 map-get($palette , color1);
-}
 
-.img2 {
-    grid-area: img2;
-}
 
-.img2 img{
-    margin-top: 15em;
-    width: 100%;
-    height:100%;
-    box-shadow: 0 0 15px 0 map-get($palette , color1);
-}
-
-.img3 {
-    grid-area: img3;
-}
-
-.img3 img{
-    margin-top: 15em;
-    width: 100%;
-    height:100%;
-    box-shadow: 0 0 15px 0 map-get($palette , color1);
-}
-
-.img1, .img2, .img3 {
-    text-align: center;
-}
-
-/* Inicio Discos 480x780 */
 
 /* Inicio Historia 480x780 */
 
@@ -909,77 +776,15 @@ footer{
 }
 /* Fin Index 480*/
 
+/*Incio Integrantes 480 */
+
+
+
+
+/*Fin Integrantes 480 */
 
 /* Inicio Discos 480*/
 
-.grid2 {
-    grid-template: 
-    'iframe1 iframe2 iframe3'
-    'img1 img2 img3';
-    gap: 10px;
-}
-
-
-.iframe1 {
-    grid-area: iframe1;
-    width: 100%;
-    height:100%;
-    
-}
-
-.iframe2 {
-    grid-area: iframe2;
-    width: 100%;
-    height: 100%;
-}
-
-.iframe3 {
-    grid-area: iframe3;
-    width: 100%;
-    height: 100%;
-}
-
-.iframe1, .iframe2, .iframe3{
-    box-shadow: 0 0 15px 0 map-get($palette , color1);
-}
-
-.iframe1 iframe, .iframe2 iframe, .iframe3 iframe{
-    width: 100%;
-}
-
-.img1 {
-    grid-area: img1;
-}
-
-.img1 img{
-    width: 100%;
-    height:100%;
-    box-shadow: 0 0 15px 0 map-get($palette , color1);
-}
-
-.img2 {
-    grid-area: img2;
-}
-
-.img2 img{
-    width: 100%;
-    height:100%;
-    box-shadow: 0 0 15px 0 map-get($palette , color1);
-}
-
-.img3 {
-    grid-area: img3;
-}
-
-.img3 img{
-    width: 100%;
-    height:100%;
-    box-shadow: 0 0 15px 0 map-get($palette , color1);
-}
-
-.img1, .img2, .img3 {
-    text-align: center;
-}
 
 /* Fins Discos 480*/
 
@@ -992,5 +797,11 @@ footer{
     }
 }
 /* Fin galeria Historia 480 */
+
+
+
+
+
+
 
 /* Fin Tamaño pantallas */
