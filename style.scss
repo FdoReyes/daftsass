@@ -57,6 +57,10 @@ header {
     }
 }
 
+.navbar {
+    background-color: #3D0000;
+}
+
 /* Fin Menu Navegación Sass*/
 
 
@@ -115,7 +119,7 @@ header {
         }
     
     .daft-index {
-
+        font-size: 20px;
     &:hover {
         color: map-get($palette , color3);
     }
@@ -135,88 +139,43 @@ header {
 
 /* Inicio discos Sass*/
 
-
-/* Inicio grids discos Sass*/
-
 .fondo-discos{
     background-image: url(./img/party-fondo.jpg);
     background-size: cover
 }
 
-.grid2 {
-    display: grid;
-    gap: 20px;
-    grid-template: 
-    'iframe1 iframe2 iframe3'
-    'img1 img2 img3';
-    align-items: center;
-}
-
-
-
-.iframe1 {
-    grid-area: iframe1;
-}
-
-.iframe2 {
-    grid-area: iframe2;
-}
-
-.iframe3 {
-    grid-area: iframe3;
-}
-
-.iframe1 iframe, .iframe2 iframe, .iframe3 iframe{
+.discovery {
+    height: 500px;
     width: 100%;
+    border-radius: 10px;
 }
 
-.iframe1, .iframe2, .iframe3{
-    box-shadow: 0 0 15px 0 map-get($palette , color1);
+.alive2007 {
+    height: 500px;
+    width: 100%;
+    border-radius: 10px;
+    
 }
 
-.img1 {
-    grid-area: img1;
+.ram {
+    height: 500px;
+    width: 100%;
+    border-radius: 10px;
 }
 
-.img1 img{
-    height: 100%;
-    box-shadow: 0 0 15px 0 map-get($palette , color1);
+.col {
+    margin-top: 0px;
 }
 
-.img2 {
-    grid-area: img2;
-}
-
-.img2 img{
-    height: 100%;
-    box-shadow: 0 0 15px 0 map-get($palette , color1);
-}
-
-.img3 {
-    grid-area: img3;
-}
-
-.img3 img{
-    height: 100%;
-    box-shadow: 0 0 15px 0 map-get($palette , color1);
-}
-
-.img1, .img2, .img3 {
-    margin-left: 50px;
-    margin-bottom: 30px;
-    width: 350px;
-    height: 350px;
-}
-
-
-.img1 img, .img2 img, .img3 img {
+.col-sm img{
+    height: 250px;
+    box-shadow: 0 0 10px 0 map-get($palette , color1);
 
     &:hover {
-    @include animate;
-    box-shadow: 0 0 15px 0 map-get($palette , color2);
+        @include animate;
+        box-shadow: 0 0 15px 0 map-get($palette , color2);
     }
 }
-/* Fin grids discos Sass*/
 
 
 .txt-discos{
@@ -254,7 +213,7 @@ header {
         width: 600px;
         height: 374px;
         border: 7px solid map-get($palette , color5);
-        box-shadow: 0 0 50px 0 map-get($palette , color1);
+        box-shadow: 0 0 10px 0 map-get($palette , color1);
         
         &:hover {
             transform: scale(1.1);
@@ -292,6 +251,27 @@ header {
     &:hover 
     {color: map-get($palette , color1);}
 }
+
+.txt-int1, .txt-int2 {
+    @include titles;
+    margin-top: 20px;
+    font-weight: bolder;
+}
+
+.guy1, .thomas1 {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.guy2, .thomas2 {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 25px;
+} 
 
 /* Fin Integrantes Sass*/
 
@@ -339,7 +319,7 @@ header {
 }
 
 .txt-origins2 {
-    font-size: 23px;
+    text-align: left;
     margin-top: 10px;
 }
 
@@ -514,13 +494,11 @@ header {
 
 
 /* Inicio Contacto */
-.container {
+.contacto {
+    background-color:rgba(90, 89, 89, 0.799);
     width: 80%;
     margin: 50px auto;
-
-    .txt-contact2 {
-        color: map-get($palette , color5);
-    }
+    border-radius: 10px;
 }
 
 .fondo-contacto{
@@ -529,147 +507,82 @@ header {
     background-position: 50%;
 }
 
-
-.contact-box {
-    background: map-get($palette , color5);
-    display:flex;
-    box-shadow: 0 0 20px 0 map-get($palette , color7);
-
-    &:hover {
-        box-shadow: 0 0 20px 0 map-get($palette , color1);
-    }
+.heading {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    border-bottom: 2px dotted white;
 }
 
-.contact-left {
-    flex-basis: 60%;
-    padding: 40px 60px;
-
-    h3 {
-        margin-bottom: 30px;
-        color: map-get($palette , color6);
-    }
+.sub-heading {
+    color: white;
+    text-align: center;
+    font-size: 20px;
 }
 
-
-.contact-right {
-    flex-basis: 40%;
-    padding: 40px;
-    background: map-get($palette , bgcolor3);
-    color: map-get($palette , color5);
-
-    .txt-follow {
-        font-size: 25px;
-        margin-bottom: 20px;
-    }
-
-    .txt-listen {
-        font-size: 25px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
+.form-control {
+    margin: 10px 0px 0px 10px;
 }
 
-.container {
-    .txt-contact{
-    @extend .txt-historia;
-    text-align: left;
+.btn {
+    background-color: red;
+    color: white;
+    width: 100%;
+    margin: 20px 20px 20px 10px;
+}
+
+.btn a:hover{
+    color: #2AD1B8;
+}
+
+.txt-follow {
+    color: white;
     font-size: 30px;
-    margin-bottom: 2px;
-    }
-
-    .txt-contact:hover{
-        text-shadow: 3px 3px map-get($palette , color1);
-    }
-
-    .txt-contact2 {
-    @extend .txt-contact;
-    font-size: 25px;
-    margin-top: 3px;
-    margin-bottom: 25px;
-    }
-
-    .txt-contact2:hover {
-        text-shadow: 3px 3px map-get($palette , color1);
-    }
 }
-
-
-.contact-left, .contact-right {
-
-    & h3 {
-    font-size: 20px}
-}
-
-.input-row {
-    display: flex;
-    justify-content: space-between;
-}
-
-.input-row .input-group {
-    flex-basis: 45%;
-}
-
-
-.message {
-    resize: none;
-}
-
-
-input {
-    border: none;
-    border-bottom: 1px solid map-get($palette , color8);
-    outline: none;
-
-}
-
-textarea {
-    width: 100%;
-    border: 1px solid map-get($palette , color8);
-    outline: none;
-    padding: 10px;
-    box-sizing:border-box;
-}
-
-
-label {
-    margin-bottom: 0px;
-    display: block;
-    color: map-get($palette , color6);
-}
-
-button {
-    background: map-get($palette , color6);
-    color: map-get($palette , color5);
-    width: 100%;
-    border: none;
-    outline: none;
-    height: 35px;
-    border-radius: 30px;
-    margin-top: 20px;
-    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181,0.3);
-}
-
 
 .follow {
     list-style: none;
-
-    li{
-        display: inline-block;
-
-        a {
-            color: map-get($palette , color5);
-            margin-left: 15px;
-            font-size: 40px;
-
-        &:hover {
-            color: map-get($palette , color4);
-        }
-        }
-    }  
 }
 
+.follow li{
+    display: inline-block;
+}
+
+.follow li a{
+    color: white;
+    margin-left: 15px;
+    font-size: 40px;
+}
+
+.follow li a:hover {
+    color: red;
+}
+
+
+.txt-listen {
+    color: white;
+    font-size: 30px;
+}
 .music {
-    @extend .follow;
+    list-style: none;
+}
+
+.music li{
+    display: inline-block;
+}
+
+.music li a{
+    color: white;
+    margin-left: 15px;
+    font-size: 40px;
+}
+
+.music li a:hover {
+    color: red;
+}
+
+.links-contact {
+    margin-top: 40px;
 }
 
 

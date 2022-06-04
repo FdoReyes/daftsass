@@ -6,8 +6,8 @@
 }
 
 @mixin cuerpo {
-    background-color: map-get($pallete, bgcolor);
-    display:flex ;
+    background-color: map-get($palette, bgcolor);
+    display:flex;
     flex-direction: column;
     min-height: 100vh;
 }
